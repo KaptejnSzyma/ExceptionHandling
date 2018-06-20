@@ -22,3 +22,5 @@ try:
 except ZeroDivisionError:
     print("You can't divide by zero")
     sys.exit(2)
+else:
+    print("Division performed succesfully")
