@@ -9,7 +9,7 @@ def getint(prompt):
         except ValueError:
             print("Invalid number, please try again")
         except EOFError:
-            sys.exit(0)
+            sys.exit(1)
 
 
 first_number = getint("Please enter first number ")
@@ -19,3 +19,4 @@ try:
     print("{} divided by {} is {}".format(first_number, second_number, first_number / second_number))
 except ZeroDivisionError:
     print("You can't divide by zero")
+    sys.exit(2)
