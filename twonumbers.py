@@ -1,7 +1,20 @@
-a = int(input("Please enter first number: "))
-b = int(input("Please enter second number: "))
+import sys
+
+
+def getint(prompt):
+    while True:
+        try:
+            number = int(input(prompt))
+            return number
+        except ValueError:
+            print("Invalid number, please try again")
+        except EOFError:
+            sys.exit(0)
+
+first_number = getint("Please enter first number")
+second_number = getint("Please enter second number")
 
 try:
-    print(a/b)
-except (ValueError, ZeroDivisionError):
-    print("Your input was wrong, terminating program")
+    print("{} divided by {} is {}".format(first_number, second_number, first_number / second_number))
+except ZeroDivisionError:
+    print("You can't divide by zero")
