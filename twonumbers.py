@@ -8,7 +8,7 @@ def getint(prompt):
             return number
         except EOFError:
             sys.exit(1)
-        except:
+        except ValueError:
             print("Invalid number, please try again")
         finally:
             print("The finally clause always executes")
