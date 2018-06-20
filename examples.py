@@ -12,5 +12,6 @@ try:
     print(factorial(1000))
 except RecursionError:
     print("This program cannot calculate factorials that large")
-
+except ZeroDivisionError:
+    print("What are you doing dividing by zero???")
 print("Program terminated")
