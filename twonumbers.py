@@ -12,8 +12,8 @@ def getint(prompt):
             sys.exit(0)
 
 
-first_number = getint("Please enter first number")
-second_number = getint("Please enter second number")
+first_number = getint("Please enter first number ")
+second_number = getint("Please enter second number ")
 
 try:
     print("{} divided by {} is {}".format(first_number, second_number, first_number / second_number))
