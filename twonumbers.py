@@ -6,10 +6,10 @@ def getint(prompt):
         try:
             number = int(input(prompt))
             return number
-        except ValueError:
-            print("Invalid number, please try again")
         except EOFError:
             sys.exit(1)
+        except:
+            print("Invalid number, please try again")
         finally:
             print("The finally clause always executes")
 
