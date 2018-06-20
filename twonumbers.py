@@ -11,6 +11,7 @@ def getint(prompt):
         except EOFError:
             sys.exit(0)
 
+
 first_number = getint("Please enter first number")
 second_number = getint("Please enter second number")
 
